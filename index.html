@@ -11,13 +11,26 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f0f8ff;
+            background: url('https://via.placeholder.com/1920x1080?text=Инватакси+фон') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: -1;
         }
         header {
-            background: linear-gradient(90deg, #007BFF, #00BFFF);
+            background: url('https://via.placeholder.com/1920x400?text=Инватакси+коллаж') no-repeat center center;
+            background-size: cover;
             color: white;
-            padding: 20px;
+            padding: 60px 20px;
             text-align: center;
         }
         nav {
@@ -38,7 +51,7 @@
         h1, h2 {
             margin-bottom: 20px;
         }
-        .features, .reviews, .contact, .why-us {
+        .features, .reviews, .contact, .why-us, .services-details {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -102,7 +115,7 @@
             display: none;
         }
         @media (max-width: 768px) {
-            .features, .reviews, .why-us {
+            .features, .reviews, .why-us, .services-details {
                 flex-direction: column;
                 align-items: center;
             }
@@ -119,6 +132,11 @@
             <a href="#contact">Заказ</a>
         </nav>
     </header>
+
+    <section id="about">
+        <h2>О нашей компании</h2>
+        <p>Наша компания предоставляет услуги инватакси в Алматы и по всему Казахстану. Мы специализируемся на безопасных и комфортных перевозках людей с ограниченными возможностями. Наша цель — сделать передвижение удобным и доступным для каждого.</p>
+    </section>
 
     <section id="services">
         <h2>Наши услуги</h2>
@@ -137,6 +155,17 @@
                 <img src="https://via.placeholder.com/280x150?text=Персональное+сопровождение" alt="Персональное сопровождение">
                 <h3>Персональное сопровождение</h3>
                 <p>Обученные водители и персонал для вашей безопасности и комфорта.</p>
+            </div>
+        </div>
+        <div class="services-details">
+            <div class="card">
+                <h3>Особенности наших услуг:</h3>
+                <ul>
+                    <li>Автомобили, оборудованные под инвалидные коляски</li>
+                    <li>Обученные и вежливые водители</li>
+                    <li>Доступные тарифы и система скидок</li>
+                    <li>Услуги сопровождения</li>
+                </ul>
             </div>
         </div>
     </section>
