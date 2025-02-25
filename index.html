@@ -1,68 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Инватакси Алматы | ТОО BBCare</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; color: #333; }
-    header { background-color: #007BFF; color: white; padding: 20px; text-align: center; }
-    nav { background-color: #0056b3; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    .hero { text-align: center; padding: 50px 20px; background-color: #e9ecef; }
-    .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
-    .hero p { font-size: 1.2rem; margin-bottom: 30px; }
-    .btn { padding: 15px 30px; background-color: #28a745; color: white; border: none; cursor: pointer; font-size: 1rem; border-radius: 5px; }
-    .btn:hover { background-color: #218838; }
-    .services, .contact { padding: 40px 20px; text-align: center; }
-    .services h2, .contact h2 { margin-bottom: 20px; }
-    .service-item { margin: 20px 0; }
-    footer { background-color: #343a40; color: white; text-align: center; padding: 10px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перевозка инвалидов и людей с ограниченными возможностями | Алматы, Казахстан</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Инватакси Алматы</h1>
-    <p>Безопасные и комфортные перевозки для людей с ограниченными возможностями</p>
-  </header>
+    <!-- Кнопка "Наверх" -->
+    <button id="scrollToTopBtn" class="scroll-to-top"><i class="fas fa-arrow-up"></i></button>
 
-  <nav>
-    <a href="#services">Услуги</a>
-    <a href="#contact">Контакты</a>
-  </nav>
+    <!-- Шапка -->
+    <header>
+        <nav>
+            <div class="logo">Перевозка для всех</div>
+            <ul class="nav-links">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="contact-info">
+                <a href="tel:+77057782810" class="phone">+7 705 778 28 10</a>
+                <div class="social-links">
+                    <a href="https://wa.me/77057782810" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://t.me/ваш_телеграм" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <h1>Инватакси по Алматы и Казахстану</h1>
-    <p>Перевозки внутри города, между городами и по всей стране</p>
-    <button class="btn" onclick="location.href='#contact'">Заказать поездку</button>
-  </section>
+    <!-- Герой-секция -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Комфортная перевозка для людей с ограниченными возможностями</h1>
+            <p>Алматы, межгород, Казахстан. Перевозка к медучреждениям, туризм и многое другое.</p>
+            <a href="#contact" class="cta-button">Оставить заявку</a>
+        </div>
+    </section>
 
-  <section class="services" id="services">
-    <h2>Наши услуги</h2>
-    <div class="service-item">
-      <h3>Городские перевозки</h3>
-      <p>Доступные поездки по Алматы с заботой о каждом пассажире.</p>
-    </div>
-    <div class="service-item">
-      <h3>Междугородние поездки</h3>
-      <p>Комфортные и безопасные поездки между городами Казахстана.</p>
-    </div>
-    <div class="service-item">
-      <h3>Индивидуальные маршруты</h3>
-      <p>Персонализированные поездки по вашему запросу.</p>
-    </div>
-  </section>
+    <!-- О нас -->
+    <section id="about" class="about">
+        <h2>Почему выбирают нас?</h2>
+        <p>Мы предоставляем безопасные и комфортные перевозки для людей с ограниченными возможностями. Наши услуги включают перевозку к медучреждениям, междугородние поездки и туризм.</p>
+        <a href="#advantages" class="cta-button">Узнать больше</a>
+    </section>
 
-  <section class="contact" id="contact">
-    <h2>Связаться с нами</h2>
-    <p>Телефон: <a href="tel:+77001234567">+7 700 123 45 67</a></p>
-    <p>Email: <a href="mailto:info@bbc.com">info@bbc.com</a></p>
-    <p>Адрес: Алматы, Казахстан</p>
-  </section>
+    <!-- Преимущества -->
+    <section id="advantages" class="advantages">
+        <h2>Наши преимущества</h2>
+        <div class="advantages-grid">
+            <div class="advantage-item">
+                <i class="fas fa-wheelchair"></i>
+                <h3>Усиленный пандус</h3>
+                <p>Комфортный угол наклона для легкой посадки.</p>
+            </div>
+            <div class="advantage-item">
+                <i class="fas fa-chair"></i>
+                <h3>Инвалидное кресло</h3>
+                <p>Грузоподъемность до 110 кг, надежные крепления 360°.</p>
+            </div>
+            <div class="advantage-item">
+                <i class="fas fa-users"></i>
+                <h3>Комфорт для сопровождающих</h3>
+                <p>Удобные места для родственников и помощников.</p>
+            </div>
+            <div class="advantage-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Безопасность</h3>
+                <p>Полная безопасность перевозки.</p>
+            </div>
+            <div class="advantage-item">
+                <i class="fas fa-snowflake"></i>
+                <h3>Кондиционер</h3>
+                <p>Комфортный микроклимат в любое время года.</p>
+            </div>
+            <div class="advantage-item">
+                <i class="fas fa-car"></i>
+                <h3>4WD</h3>
+                <p>Легкое путешествие по бездорожью.</p>
+            </div>
+        </div>
+        <a href="#contact" class="cta-button">Заказать перевозку</a>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 ТОО Инватакси Алматы</p>
-  </footer>
-</body>
-</html>
+    <!-- Отзывы -->
+    <section id="reviews" class="reviews">
+        <h2>Отзывы</h2>
+        <div class="reviews-grid">
+            <div class="review-item">
+                <p>"Отличный сервис! Водитель очень внимательный, машина комфортная. Спасибо!"</p>
+                <span>- Айгуль (Алматы)</span>
+            </div>
+            <div class="review-item">
+                <p>"Үйден ауруханаға дейін өте ыңғайлы. Рахмет!"</p>
+                <span>- Нурлан (Астана)</span>
+            </div>
+        </div>
+        <a href="#contact" class="cta-button">Оставить отзыв</a>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <h2>Свяжитесь с нами</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="tel" id="phone" placeholder="Ваш телефон" required>
+                <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить заявку</button>
+            </form>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.776730202567!2d76.85162331548406!3d43.23536687913775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883695f5f5f5f5f%3A0x5f5f5f5f5f5f5f5f!2z0JHQtdC70L7RgNC-0L_QvtC70YzRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDQvtC60YDRg9Cz0L7Qu9C-0LPQuNGH0LXRgdC60LjQu
